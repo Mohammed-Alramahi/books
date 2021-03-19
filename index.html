@@ -1,27 +1,31 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Booky</title>
     <link rel="stylesheet" href="res/css/style.css">
 </head>
+
 <body>
     <header>
         <div class="container">
             <div class="logo">
-               <a href="#"><h1>Booky</h1></a>
+                <a href="#">
+                    <h1>Booky</h1>
+                </a>
             </div>
-        
-        <nav>
-            <ul> 
-                <li class="current"><a href="#">Home</a> </li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Forum</a></li>
-                <li><a href="#">About</a></li>
-            </ul>
-        </nav>
-    </div>
+
+            <nav>
+                <ul>
+                    <li  class="current"><a id="home" href="#">Home</a> </li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Forum</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
         <section id="showcase">
@@ -31,15 +35,19 @@
             </div>
         </section>
 
-        <section id="content">
-            <div class="container">
+        <section id="cards">
 
+            <div class="container">
                 <div class="card">
                     <img src="res/images/fundamental.jpg" alt="Fundamentals">
                     <h3>Programming Fundamentals</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, nobis!</p>
                 </div>
-
+                <div class="card">
+                    <img src="res/images/fundamental.jpg" alt="Fundamentals">
+                    <h3>Programming Fundamentals</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, nobis!</p>
+                </div>
                 <div class="card">
                     <img src="res/images/html.jpg" alt="html">
                     <h3>Html & CSS</h3>
@@ -47,12 +55,12 @@
                 </div>
 
                 <div class="card">
-                    <img src="res/images/php.jpg" alt="php">
+                    <img src="res/images/phplogo.png" alt="php">
                     <h3>PHP</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, nobis!</p>
                 </div>
-
             </div>
+
         </section>
     </main>
 
@@ -60,8 +68,9 @@
         <div id="copyrights">
             <p>Copyrights to Alramahi &copy 2099</p>
         </div>
-        
+
     </footer>
 </body>
-<script src="res/js/app.js"></script>
+<!--<script src="res/js/app.js"></script>-->
+
 </html>
