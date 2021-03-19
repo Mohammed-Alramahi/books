@@ -109,9 +109,6 @@ header a:hover{
     text-transform: capitalize;
     font-size: 25px;
 }
-
-
-
 @media screen and (max-width: 700px) {
     .card {
       min-width: 80%;
