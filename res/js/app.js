@@ -16,12 +16,11 @@ else if (bookName == 'js') {
 }
 var bookCount = prompt('How many books you want to order?');
 while (bookCount >= 11) {
-alert('You can buy 10 books at maximum pls Enter 10 or less');
+alert('You can buy 10 books at maximum please Enter 10 or less');
 var bookCount = prompt('How many books you want to order?');
 }
 
-document.getElementById('count').innerHTML = '<h3>' + 'no. of ordered books : ' + bookCount + '</h3>';
-for (var i = 0; i < bookCount; i++) {
-    res += img;
+for (var i = 1; i <= bookCount; i++) {
+    res += img+'<h3>' + 'book number: ' + i + '</h3>';
 }
 document.getElementById('order').innerHTML = res;
