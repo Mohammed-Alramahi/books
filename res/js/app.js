@@ -21,6 +21,6 @@ var bookCount = prompt('How many books you want to order?');
 }
 
 for (var i = 1; i <= bookCount; i++) {
-    res += img+'<h3>' + 'book number: ' + i + '</h3>';
+    res += '<h3>' + 'book number: ' + i + '</h3>'+img;
 }
 document.getElementById('order').innerHTML = res;
