@@ -1,21 +1,27 @@
-
-var favBook = prompt('Enter your favourite book name: ');
-var favColor = prompt('Enter your favourite color: ');
-
-
-if (favBook != '' && favColor != '') {
-    document.getElementById('favbook').style = 'color:' + favColor + ';font-size: 25px;';
-    document.getElementById('favbook').innerHTML = 'You picked ' + favBook + ' as your favorite book and ' + favColor + ' as your favourite color!';
+alert('Enter one of the following book names: php, html, js');
+var res = '';
+var bookName = prompt("Enter you favourite book");
+var img = '';
+while (bookName != 'php' && bookName != 'html' && bookName != 'js') {
+    bookName = prompt('You gave wrong book name please enter one of those:php, html, js');
 }
-else {
-    var confirmation = confirm('you didn\'t enter some fields, are you sure you want to proceed?');
-    if (confirmation == true) {
-        document.getElementById('favbook').style = 'color:red'+';font-size: 25px;';
-        document.getElementById('favbook').innerHTML = 'You didn\'t fill all fields :(';
-    }
-    else {
-        alert('please refresh your page');
-    }
+if (bookName == 'php') {
+    img = ' <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuxFblIYgqChZZnN6Iw8kaSk9bTkh36LI1ug&usqp=CAU" alt="php">';
+}
+else if (bookName == 'html') {
+    img = '<img src="https://commandlinetechnologies.com/wp-content/uploads/2021/02/All-about-HTML-Full-form-of-HTML-Structure-of-HTML-Application-of-HTML-Online-HTML-course-CommandLine-Technologies.png" alt="html">';
+}
+else if (bookName == 'js') {
+    img = '<img src="https://miro.medium.com/max/720/1*LjR0UrFB2a__5h1DWqzstA.png" alt="js"></img>';
+}
+var bookCount = prompt('How many books you want to order?');
+while (bookCount >= 11) {
+alert('You can buy 10 books at maximum pls Enter 10 or less');
+var bookCount = prompt('How many books you want to order?');
 }
 
-
+document.getElementById('count').innerHTML = '<h3>' + 'no. of ordered books : ' + bookCount + '</h3>';
+for (var i = 0; i < bookCount; i++) {
+    res += img;
+}
+document.getElementById('order').innerHTML = res;
