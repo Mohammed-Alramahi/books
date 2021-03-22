@@ -6,16 +6,13 @@ while(res!="yes"&&res!="no"){
 if(res=="yes")
 {
     var header=document.getElementById("header");
-    var footer= document.getElementsByTagName("footer");
     function scrollDown() {
         if (document.body.scrollTop > 170 || document.documentElement.scrollTop > 170){
            header.classList.add("fixed");
-           footer.classList.add("fixed");
            console.log('Scrolled');
         } 
         else {
             header.classList.remove("fixed");
-            footer.classList.remove("fixed");
             console.log('unScrolled');
           }
       }
