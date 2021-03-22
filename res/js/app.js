@@ -3,7 +3,7 @@ var res = '';
 var bookName = prompt("Enter you favourite book");
 var img = '';
 while (bookName != 'php' && bookName != 'html' && bookName != 'js') {
-    bookName = prompt('You gave wrong book name please enter one of those:php, html, js');
+    bookName = prompt('You gave wrong book name please enter one of those: php, html, js');
 }
 if (bookName == 'php') {
     img = ' <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuxFblIYgqChZZnN6Iw8kaSk9bTkh36LI1ug&usqp=CAU" alt="php">';
